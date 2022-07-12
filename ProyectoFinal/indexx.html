@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calcula tu Interes Simple y Compuesto</h1>
+        <script src="interes.js"></script>
+    </header>
+    <main>
+        <form class="main-form" action="">
+            <div>
+                <label for="InputInversion">
+                    ¿Cuál es el monto de tu Inversión en $?
+                </label>
+                <input class="main-input" id="InputInversion" type="number">
+            </div>
+            <div>
+                <label for="InputTasa">
+                    ¿Cuál es la Tasa Anual?
+                </label>
+                <input class="main-input" id="InputTasa" type="number">
+            </div>
+            <div>
+                <label for="InputTiempo">
+                    ¿Cuál es el Tiempo de Duración en Años?
+                </label>
+                <input class="main-input" id="InputTiempo" type="number">
+            </div>
+           <section class="main-buttons">
+                <div>
+                    <button type="button" onclick="calcularInteresSimple()">
+                        Calcular Interes Simple
+                    </button>
+                </div>
+                <div>
+                    <button type="button" onclick="calcularInteresCompuesto()">
+                        Calcular Interes Compuesto
+                    </button>
+                </div>
+           </section>
+            <div>
+                <p id="ResultP"></p>
+                <p id="Result2"></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
